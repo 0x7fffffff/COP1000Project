@@ -13,21 +13,21 @@ import Chapter2, Chapter3, Chapter4, Chapter5, Chapter6, Chapter7, Chapter8, Cha
 # to the corresponding modules that contain their individual programs.
 dict = {
     '2':Chapter2,
-	'3':Chapter3, 
-	'4':Chapter4, 
-	'5':Chapter5, 
-	'6':Chapter6, 
-	'7':Chapter7, 
-	'8':Chapter8, 
-	'10':Chapter10, 
-	'12':Chapter12, 
-	'14':Chapter14,
+    '3':Chapter3, 
+    '4':Chapter4, 
+    '5':Chapter5, 
+    '6':Chapter6, 
+    '7':Chapter7, 
+    '8':Chapter8, 
+    '10':Chapter10, 
+    '12':Chapter12, 
+    '14':Chapter14,
 }
 
 
 # Executes the main() function located in the module that corresponds to the input chapter number.
 def runModuleForChapter(chapter):
-	return dict[chapter].main()
+    return dict[chapter].main()
 
 
 

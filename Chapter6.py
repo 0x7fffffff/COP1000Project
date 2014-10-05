@@ -23,6 +23,7 @@ def main():
 # to make sure it is a number and that it isn't 0 (wouldn't be a triangle) then returned.
 def getVariable(side):
 	x = 0.0
+	
 	while not isNumber(x) or x == 0.0:
 		x = raw_input('Enter the length of side ' + side + '.\n')
 	return x

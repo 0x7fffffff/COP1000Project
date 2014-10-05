@@ -21,6 +21,7 @@ def validateInput(x):
 	while True:
 		# Add period and newline character to the input string (user prompt)
 		output = raw_input(x + '.\n')
+		
 		if isNumber(output):
 			break
 		else:

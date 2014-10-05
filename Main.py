@@ -24,12 +24,9 @@ dict = {
     '14':Chapter14,
 }
 
-
 # Executes the main() function located in the module that corresponds to the input chapter number.
 def runModuleForChapter(chapter):
     return dict[chapter].main()
-
-
 
 # Enumerates all the keys in the dictionary to show the user the available chapter numbers
 print '\n\nHello! I can execute programs one at a time from chapters:', [int(x) for x in dict.keys()]
@@ -59,4 +56,3 @@ while True:
     if continueInput in {'n', 'no'}:
         print 'Goodbye!'
         break
-

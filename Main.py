@@ -12,7 +12,7 @@ import Chapter2, Chapter3, Chapter4, Chapter5, Chapter6, Chapter7, Chapter8, Cha
 # Create dictionary containing keys for the available chapter numbers, and set their values
 # to the corresponding modules that contain their individual programs.
 dict = {
-	'2':Chapter2,
+    '2':Chapter2,
 	'3':Chapter3, 
 	'4':Chapter4, 
 	'5':Chapter5, 
@@ -36,27 +36,27 @@ print '\n\nHello! I can execute programs one at a time from chapters:', [int(x) 
 
 # Gives the ability to continue to execute more programs without restarting the Main.py process.
 while True:
-        print '\nPlease enter the chapter number of the program you\'d like to execute.'
+    print '\nPlease enter the chapter number of the program you\'d like to execute.'
 
-        # Initialized as a string to force the while loop to iterate at least once, without the need
-        # of additional checks on each iteration.
-        selectedChapter = ''
+    # Initialized as a string to force the while loop to iterate at least once, without the need
+    # of additional checks on each iteration.
+    selectedChapter = ''
 
-        # Continuously prompts the user to enter a chapter number while the input is not a key in the dictionary.
-        while not selectedChapter in dict:
-                selectedChapter = raw_input('Enter a chapter number.\n')
+    # Continuously prompts the user to enter a chapter number while the input is not a key in the dictionary.
+    while not selectedChapter in dict:
+        selectedChapter = raw_input('Enter a chapter number.\n')
 
-        # Run the desired program.
-        print 'Executing module', selectedChapter,'\n'
-        runModuleForChapter(str(selectedChapter))
+    # Run the desired program.
+    print 'Executing module', selectedChapter,'\n'
+    runModuleForChapter(str(selectedChapter))
 
-        continueInput = ''
-        # Prompt the user to determine whether or not they want to continue executing programs. If they
-        # Don't, break the main while loop.
-        while continueInput.lower() not in {'y', 'n', 'yes', 'no'}:
-                continueInput = raw_input('\n\nWould you like to run another program? (y/n)\n')
+    continueInput = ''
+    # Prompt the user to determine whether or not they want to continue executing programs. If they
+    # Don't, break the main while loop.
+    while continueInput.lower() not in {'y', 'n', 'yes', 'no'}:
+        continueInput = raw_input('\n\nWould you like to run another program? (y/n)\n')
 
-        if continueInput in {'n', 'no'}:
-                print 'Goodbye!'
-                break
+    if continueInput in {'n', 'no'}:
+        print 'Goodbye!'
+        break
 

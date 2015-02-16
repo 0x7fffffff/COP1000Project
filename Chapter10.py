@@ -27,5 +27,5 @@ def main():
 
 	# Close the file.
 	file.close()
-
+	
 	print 'The total running time of the videos is ' + str(total) + ' seconds.'

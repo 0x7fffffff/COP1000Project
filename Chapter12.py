@@ -18,6 +18,5 @@ def main():
 	# Check the length of the input string to make sure it is 10.
 	if  len(phoneNumber) == 10:
 		# Concatenate formatting characters around slices of string.
-		print 'The formatted number is ' + '(' + phoneNumber[0:3] + ')' + phoneNumber[3:6] + '-' + phoneNumber[6:10] +'\n'
-	else:
+		print 'The formatted number is ' + '(' + phoneNumber[0:3] + ')' + phoneNumber[3:6] + '-' + phoneNumber[6:10] +'\n'	else:
 		print 'That number is not 10 digits.\n'
